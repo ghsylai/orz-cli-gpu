@@ -19,7 +19,7 @@ impl Miner {
                 (treasury.reward_rate as f64) / 10f64.powf(ore::TOKEN_DECIMALS as f64)
             );
             println!(
-                "Total claimed rewards: {} ORE",
+                "Total claimed rewards: {} ORZ",
                 (treasury.total_claimed_rewards as f64) / 10f64.powf(ore::TOKEN_DECIMALS as f64)
             );
         }
