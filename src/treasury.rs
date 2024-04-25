@@ -10,12 +10,12 @@ impl Miner {
         {
             let treasury = get_treasury(&self.rpc_client).await;
             let balance = treasury_tokens.token_amount.ui_amount_string;
-            println!("{:} ORE", balance);
+            println!("{:} ORZ", balance);
             println!("Admin: {}", treasury.admin);
             println!("Difficulty: {}", treasury.difficulty.to_string());
             println!("Last reset at: {}", treasury.last_reset_at);
             println!(
-                "Reward rate: {} ORE",
+                "Reward rate: {} ORZ",
                 (treasury.reward_rate as f64) / 10f64.powf(ore::TOKEN_DECIMALS as f64)
             );
             println!(
