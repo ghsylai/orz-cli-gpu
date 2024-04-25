@@ -44,9 +44,9 @@ impl Miner {
             let reward_rate =
                 (treasury.reward_rate as f64) / (10f64.powf(ore::TOKEN_DECIMALS as f64));
             stdout.write_all(b"\x1b[2J\x1b[3J\x1b[H").ok();
-            println!("Balance: {} ORE", balance);
-            println!("Claimable: {} ORE", rewards);
-            println!("Reward rate: {} ORE", reward_rate);
+            println!("Balance: {} ORZ", balance);
+            println!("Claimable: {} ORZ", rewards);
+            println!("Reward rate: {} ORZ", reward_rate);
 
             // Escape sequence that clears the screen and the scrollback buffer
             println!("\nMining for a valid hash...");
